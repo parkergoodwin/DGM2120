@@ -1,0 +1,431 @@
+/*--------CSS RESET---------*/
+body, h1, h2, h3, h4, h5, h6, p {
+	font-size: 16px;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+/*--------body styling---------*/
+
+body {
+	margin:0;
+	background-color: #170202;
+	background
+	: url(pics/background.png);
+	background-repeat: repeat-x;
+	font-family: 'Philosopher', sans-serif;
+}
+
+
+/*--------Header styling---------*/
+
+header {
+	background-color: #FFE7D8;
+	border-bottom: 2px solid grey;
+	border-top: 2px solid grey;      /*consider to simplify*/
+	border-left: 2px solid grey; 
+	border-right: 2px solid grey;
+	margin: 0;
+	background-image: url(pics/bicycle-hi.png);
+	background-repeat: no-repeat;
+}
+
+
+header h1 {
+	color: #e8551a;
+	letter-spacing: 2px;
+	margin-left: 110px;
+	padding-bottom: 0px;
+	font-size: xx-large;
+	text-shadow: 1px 2px 2px;
+}
+
+header h2 {
+	color: #e8551a;
+	margin-left: 110px;
+	font-size: x-large;
+	text-shadow: 1px 2px 2px;
+}
+
+
+
+
+/*--------NAV styling---------*/
+
+
+
+/*--------lists styling---------*/
+ul.withoutNumbers, ul.numbers {
+	margin: 0;
+	padding: 0;
+}
+
+
+ul.withoutNumbers li, ul.numbers li {
+	background-repeat: no-repeat;
+	list-style-type: none; 
+	margin-left: 2%;
+	background-position: left center;
+	padding-left: 22px;
+
+}
+
+
+
+
+ul.numbers li {
+	background-image: url(pics/apple.png);
+}
+
+ul.withoutNumbers li {
+	background-image: url(pics/smile.png);
+}
+
+dt.definitions {
+	font-size: large;
+}
+
+
+/*--------content styling---------*/
+
+div#content{
+	padding: 1em 2% 1em 2%;
+}
+
+div#content h1 {
+	font-size: xx-large;
+	padding-bottom: .5em;
+	text-align: left;
+	font-weight: 900;
+	text-shadow: 1px 1px 1px;
+}
+
+div#content h2 {
+	font-weight: 700;
+	font-size: x-large;
+	padding-bottom: .5em;
+	padding-top: .5em;
+	text-decoration: underline;
+}
+
+div.passion {
+	padding-bottom: .5em;
+}
+
+div#content p {
+	line-height: 150%;
+	padding-bottom: .5em;
+
+}
+
+
+div#content blockquote {
+	color: black;
+	font-style: italic;		
+}
+
+div#content dl {
+	line-height: 150%;
+	margin: 0;
+}
+
+div#content a {
+	text-decoration: none;
+	color: #001fa8;
+}
+
+div#content a.email {
+	padding-left: .5em;
+}
+
+/*--------Table CSS styling---------*/
+table.operation {
+	background-color: #FFE7D8;
+	border-collapse: collapse;
+	margin-bottom: 1em;
+	width: 96%;
+	font-size: 1em;
+	color: #170202;
+	border: solid 3px #777;
+	font-family: Verdana;
+	box-shadow: 2px 2px 4px #777;
+}
+
+table.operation th {
+	margin: 0;
+	background-color: grey;
+	padding: .5em;
+	font-size: 1.5em;
+}
+
+table.operation td {
+	padding: .5em;
+	padding-right: .5em;
+	text-align: center;
+}
+
+table.operation tr:nth-child(even) {
+	background-color: #e8551a;
+
+}
+
+table.operation tr:hover {
+	background-color: #777;
+}
+
+/*--------Map CSS styling---------*/
+iframe.google {
+	border: none;
+	box-shadow: 2px 2px 4px #777;
+	height: 500px;
+	width: 98%;
+	margin-left: 1%;
+
+}
+
+/*--------Video CSS styling---------*/
+iframe.youtube {
+	width: 96%;
+	margin-left: 1%;
+	height: 330px;
+	box-shadow: 2px 2px 4px #777;
+	border: none;
+}
+
+
+/*--------Advanced CSS styling---------*/
+
+div#advanced {
+	max-width: 960px;
+	min-width: 350px;
+	margin: 0 auto;
+	background-color: #89a899;
+	border: grey;
+	box-shadow: 0px 0px 15px white;
+
+
+}
+
+
+
+/*--------Mobile NAV styling---------*/
+@media only screen and (max-width: 700px) {
+nav{
+	background-color: #FFE7D8;
+	padding: .2em;
+}
+
+nav ul {
+padding: 0;
+margin: 0;
+}
+
+nav ul li a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	border: solid 2px grey;
+	border-radius: 6px;
+	padding: .25em;
+	margin: .2em;
+	background-color: #e8551a;
+	font-weight: bolder;
+	color: #FFE7D8;
+	background: linear-gradient(to bottom, #ff5308 0%, #451703 100%) 
+}
+
+nav ul.menu a:hover {
+	color: white;
+}
+
+nav ul li.active a {
+	background: #451703;
+}
+
+}
+
+
+
+
+/*--------Desktop/Tablet NAV styling---------*/
+@media only screen and (min-width: 701px) {
+
+nav {
+	background-color: #FFE7D8;
+	background: linear-gradient(to bottom, #ff5308 0%, #451703 100%)
+
+}
+
+nav ul.menu {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+nav ul.menu a {
+	float: left;
+	color: #FFE7D8;
+	padding: 10px 2em;
+	text-decoration: none;
+	border-right: 1px solid grey;
+	background: linear-gradient(to bottom, #ff5308 0%, #451703 100%)
+}
+
+nav ul.menu a:hover {
+	color: white;
+}
+
+nav ul li.active a {
+	background: #451703;
+}
+
+}
+
+
+
+/*--------footer styling--------*/
+footer {
+	background-color: #FFE7D8;
+	color: #e8551a;
+	border-top: 2px solid grey;
+	border-bottom: 2px solid grey;
+	padding: .5em .5em;
+	text-align: center;
+}
+
+footer {
+	clear: both;
+
+}
+
+
+
+/*--consolidate the top and bottom tags to make it more simple with code--*/
+
+
+
+/*---- Image Styling -------*/
+
+figure.crew {
+	background-color: white;
+	float: left;
+	padding: .3em;
+	border: 2px solid grey;
+	width: 190px;
+	height: 355px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: center;
+}
+
+figure.crew figcaption {
+	font-size: .75em;
+	font-family: Verdana;
+	text-align: center;
+}
+
+figure.crew span {
+	display: block;
+	color: grey;
+	font-size: 1.5em;
+
+}
+
+figure.timp {
+	width: 20%;
+	margin: 0;
+	float: right;
+	padding-left: 5px;
+}
+
+figure.timp img {
+	width: 100%;
+
+}
+
+figure.timp figcaption{
+	text-align: center;
+	font-family: verdana;
+
+}
+
+figure.view {
+	width: 20%;
+	margin: 0;
+	float: right;
+	padding-left: 4%;
+	margin-left: 0;
+
+}
+
+figure.timp img {
+	width: 100%;
+}
+
+figure.view figcaption {
+	text-align: center;
+	font-family: verdana;
+	padding-bottom: 5px;
+}
+
+figure.view img {
+	width: 100%;
+}
+
+
+/*------- Styling for Forms -------*/
+
+form.bread label {
+	display: block;
+	padding-bottom: 5px;
+}
+
+form.bread fieldset {
+	background-color: grey;
+	border: solid 1px;
+	margin: 1.5em;
+	border-radius: 10px;
+}
+
+form.bread legend {
+	background-color: #a8a8a8;
+	border: solid 1px;
+	font-weight: bold;
+	font-size: large;
+	border-radius: 8px;
+	padding: 2px;
+}
+
+form.bread span {
+	color: black;
+}
+
+form.bread input.happy {
+	display: block;
+	border-radius: 6px;
+	width: 25em;
+}
+
+form.bread input.send {
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 10em;
+	font-weight: bolder;
+	display: block;
+	margin: 10px;
+	padding: 1em;
+
+}
+
+
+
+/*--------Extra styling--------*/
+
+div.noCollapse {
+	clear: both;
+}
+

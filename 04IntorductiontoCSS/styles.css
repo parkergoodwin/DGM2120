@@ -1,0 +1,164 @@
+/*--------CSS RESET---------*/
+body, h1, h2, h3, h4, h5, h6, p {
+	font-size: 16px;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+/*--------body styling---------*/
+
+body {
+	margin:0;
+	background-color: #89a899;
+	font-family: 'Philosopher', sans-serif;
+}
+
+
+/*--------Header styling---------*/
+
+header {
+	background-color: #FFE7D8;
+	border-bottom: 2px solid grey;
+	border-top: 2px solid grey;      /*consider to simplify*/
+	border-left: 2px solid grey; 
+	border-right: 2px solid grey;
+	margin: 0;
+
+}
+
+
+header h1 {
+	color: #e8551a;
+	letter-spacing: 2px;
+	margin-left: 1.5%;
+	padding-bottom: 0px;
+	font-size: xx-large;
+}
+
+header h2 {
+	color: #e8551a;
+	margin-left: 1.5%;
+	font-size: x-large;
+}
+
+
+
+
+/*--------NAV styling---------*/
+
+nav {
+	background-color: #849ea8;
+}
+
+nav ul.menu {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+nav ul.menu a {
+	float: left;
+	color: #001fa8;
+	padding: 2px 1em;
+	text-decoration: none;
+	border-right: 1px solid grey;
+}
+
+nav ul.menu a:hover {
+	color: white;
+}
+
+
+/*--------lists styling---------*/
+
+ol.numbers {
+	list-style-type: circle;
+}
+
+ul.withoutNumbers {
+	list-style-type: unset;
+}
+
+dt.definitions {
+	font-size: large;
+}
+
+
+/*--------content styling---------*/
+
+div#content{
+	padding: 1em 2% 1em 2%;
+}
+
+div#content h1 {
+	font-size: xx-large;
+	padding-bottom: .5em;
+	text-align: left;
+	font-weight: 900;
+}
+
+div#content h2 {
+	font-weight: 700;
+	font-size: x-large;
+	padding-bottom: .5em;
+	padding-top: .5em;
+	text-decoration: underline;
+}
+
+div.passion {
+	padding-bottom: .5em;
+}
+
+div#content p {
+	line-height: 150%;
+	padding-bottom: .5em;
+
+}
+
+
+div#content blockquote {
+	color: black;
+	font-style: italic;		
+}
+
+div#content dl {
+	line-height: 150%;
+	margin: 0;
+}
+
+div#content a {
+	text-decoration: none;
+	color: #001fa8;
+}
+
+div#content a.email {
+	padding-left: .5em;
+}
+
+
+
+/*--------footer styling--------*/
+footer {
+	background-color: #FFE7D8;
+	color: #e8551a;
+	border-top: 2px solid grey;
+	border-bottom: 2px solid grey;
+	padding: .5em .5em;
+	text-align: center;
+}
+
+
+
+/*--consolidate the top and bottom tags to make it more simple with code--*/
+
+
+/*--------Extra styling--------*/
+
+div.noCollapse {
+	clear: both;
+}
+

@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="parker.css" rel="stylesheet" >
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+<!--PHONE WIDTH-->
+<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+<title>Incredible Vacations</title>
+</head>
+
+<body>
+
+<header>
+	<h1>Incredible Vacations</h1>
+	<h2>Where Dreams Come True</h2>
+</header>
+	
+<nav>
+	<ul class="menu">
+		<li><a href="index.html">Main Menu</a></li>
+		<li><a href="destinations.html">Destinations</a></li>
+		<li><a href="video.html">Video</a></li>
+		<li><a href="packages.html">Packages</a></li>
+		<li class="active"><a href="contact.html">Contact Us</a></li>
+	</ul>
+	<div class="noCollapse"></div> <!-- no menu collapse -->
+</nav>
+
+<div id="content">
+
+<h1>Contact Incredible Vacations</h1>
+
+<form action="FormToEmail.php" method="POST" enctype="multipart/form-data" class="email">
+
+<fieldset>
+<legend>Personal Information</legend>
+	<label>First Name: <input name="first" value="" type="text" required pattern="[a-zA-Z-. ]{3,99}" placeholder="Dan" class="lol" /></label>
+	<label>Last Name: <input name="last" value="" type="text" required pattern="[a-zA-Z-. ]{3,99}" placeholder="Daniels" class="lol" /></label>
+	<label>Telephone: <input name="phone" value="" type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-123-1234" class="lol" /></label>
+	<label>Email Address: <input name="Email_Address" value="" required type="email" placeholder="awesomeness@incvac.com" class="lol" /><br></label>
+</fieldset>
+
+
+<fieldset>
+<legend>What can Incredible Vacations help you with?</legend>
+	<label><span><input name="Planning" value="Planning" type="checkbox" class="london">Planning</span></label>
+	<label><span><input name="Booking" value="Booking" type="checkbox" class="london">Booking</span></label>
+	<label><span><input name="Airfare" value="Airfare" type="checkbox" class="london">Airfare</span></label>
+	<label><span><input name="Lodging" value="Lodging" type="checkbox" class="london">Lodging</span></label>
+	<label><span>We miss anything?<br><textarea name=otherComments></textarea></span></label>
+</fieldset>
+
+<fieldset>
+<legend>What is the purpose of travel?</legend>
+<label><span><input name="Vacation" type="radio" value="Vacation" />Vacation </span></label>
+<label><span><input name="Commercial" type="radio" value="Commercial" />Commercial </span></label>
+<label><span><input name="Personal" type="radio" value="Personal" />Personal </span></label>
+</fieldset>
+
+<fieldset>
+<legend>What trip would you like more details about?</legend>
+<select>
+	<option value="Dubai">Dubai, UAE</option>
+	<option value="Paris">Paris, France</option>
+	<option value="Moscow">Moscow, Russia</option>
+	<option value="Johannesburg">Johannesburg, SA</option>
+	<option value="Shanghai">Shanghai, China</option>
+	<option value="Baikal">Lake Baikal, Russia</option>
+	<option value="Moab">Moab, Utah</option>
+	<option value="Leadville">Leadville, Colorado</option>
+</fieldset>
+
+
+<input name="subject" value="Contact Incredible Vacations" type="hidden" />
+<input name="redirect" value="thanks.html" type="hidden" />
+
+ 
+
+<input name="Submit" value="Send Message" type="submit" class="send" />
+
+
+</form>
+
+
+
+</div>
+
+<footer><p> &copy; 2016 Incredible Vacations LLC &bullet; Built by DevGoodwin &bullet; </p></footer>
+
+</body>
+</html>

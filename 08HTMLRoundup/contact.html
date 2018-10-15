@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="styles.css" rel="stylesheet" >
+<link href='https://fonts.googleapis.com/css?family=Philosopher:400,700' rel='stylesheet' type='text/css'>
+
+<!--PHONES LIE ABOUT WIDTH-->
+<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+<title>Adventure Development Inc.</title>
+</head>
+<body>
+<div id="advanced">
+
+<header>
+	<h1>Adventure Development Inc.</h1>
+	<h2>Your Product. Our Development. One Team.</h2>
+</header>
+
+<nav>
+	<ul class= "menu">
+		<li><a href="index.html">Main Menu</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="staff.html">AD Staff</a></li>
+		<li class="active"><a href="contact.html">Contact AD Inc.</a></li>
+		<li><a href="hours.html">Hours</a></li>
+		<li><a href="location.html">Location</a></li>
+	</ul>
+	<div class="noCollapse"></div> <!-- prevent menu from collapsing -->
+</nav>
+
+<div id="content">
+
+<h1>Contact Adventure Development Inc.</h1>
+
+<form action="FormToEmail.php" method="POST" enctype="multipart/form-data" class="bread">
+
+<fieldset>
+<legend>Informartion to Connect</legend>
+	<label>First Name: <input name="first" value="" type="text" required pattern="[a-zA-Z-. ]{3,99}" placeholder="John" class="happy" /></label>
+	<label>Last Name: <input name="last" value="" type="text" required pattern="[a-zA-Z-. ]{3,99}" placeholder="Doe" class="happy" /></label>
+	<label>Telephone: <input name="phone" value="" type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="801-123-4567" class="happy" /></label>
+	<label>Email Address: <input name="Email_Address" value="" required type="email" placeholder="abc123@adinc.com" class="happy" /><br></label>
+</fieldset>
+
+
+<fieldset>
+<legend>What services would you would like to know more about.</legend>
+	<label><span><input name="Appointment" value="Appointment" type="checkbox" >Appointment</span></label>
+	<label><span><input name="Quote" value="Quote" type="checkbox" >Quote</span></label>
+	<label><span><input name="Development" value="Development" type="checkbox" >Development</span></label>
+	<label><span><input name="Consulting" value="Consulting" type="checkbox" >Consulting</span></label>
+	<label><span>Other<br><textarea name=otherComments></textarea></span></label>
+</fieldset>
+
+<fieldset>
+<legend>What type of product does your company use?</legend>
+<label><span><input name="Footwear" type="radio" value="Footwear" />Footwear </span></label>
+<label><span><input name="Apparel" type="radio" value="Apparel" />Apparel </span></label>
+<label><span><input name="Gear" type="radio" value="Gear" />Gear </span></label>
+</fieldset>
+
+<fieldset>
+<legend>Contact a professional</legend>
+<select>
+	<option value="Field">Field Developer</option>
+	<option value="Inside">Inside Consultant</option>
+	<option value="Marketing"> Marketing Specialist</option>
+	<option value="Planning">Planning Specialist</option>
+</fieldset>
+
+
+<input name="subject" value="Contact Adventure Development Inc." type="hidden" />
+<input name="redirect" value="thanks.html" type="hidden" />
+
+ 
+
+<input name="Submit" value="Send Message" type="submit" class="send" />
+
+</form>
+
+</div> <!--- END OF FORMS CONTENT --> 
+
+
+<footer><p> &copy; 2016 Adventure Development Inc. &bullet; Built by DevGoodwin &bullet; </p></footer>
+
+</div><!---End Content for advanced CSS-->
+
+</body>
+</html>
